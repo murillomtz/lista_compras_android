@@ -31,7 +31,7 @@ public class FormActivity extends AppCompatActivity {
             setTitle("Alterar Produto");
             produto = (Produto) intent.getSerializableExtra("PRODUTO");
             nome.setText(produto.getNome());
-            quantidade.setText(produto.getQuantidade());
+            quantidade.setText(produto.getQuantidade()+ "");
             valor.setText(produto.getValor() + "");
 
         } else {
